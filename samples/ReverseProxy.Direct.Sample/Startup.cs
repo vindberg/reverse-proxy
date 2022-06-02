@@ -114,7 +114,7 @@ namespace Yarp.Sample
             /// the RequestUri.</param>
             public override async ValueTask TransformRequestAsync(HttpContext httpContext, HttpRequestMessage proxyRequest, string destinationPrefix)
             {
-                // Copy all request headers
+                // Copy all request headers 
                 await base.TransformRequestAsync(httpContext, proxyRequest, destinationPrefix);
 
                 // Customize the query string:
